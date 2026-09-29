@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbf5ed">
+  <meta name="description" content="A tiny corner of the internet, made just for you.">
+  <title>Happy Birthday, Anuu ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+    <span class="welcome-flower flower-one" aria-hidden="true">✿</span>
+    <span class="welcome-star star-one" aria-hidden="true">✦</span>
+    <span class="welcome-star star-two" aria-hidden="true">✧</span>
+    <div class="welcome-inner">
+        <div class="welcome-stage cake-stage" id="cakeStage">
+          <p class="eyebrow">one little wish, just for you</p>
+          <button class="birthday-cake" id="birthdayCake" type="button" aria-label="Tap to blow out the candles" aria-pressed="false">
+            <span class="cake-scene" aria-hidden="true">
+              <span class="cake-plate"></span>
+              <span class="cake-body"></span>
+              <span class="cake-icing"></span>
+              <span class="cake-candle candle-one"><span class="cake-flame"></span></span>
+              <span class="cake-candle candle-two"><span class="cake-flame"></span></span>
+              <span class="cake-candle candle-three"><span class="cake-flame"></span></span>
+            </span>
+            <span class="cake-tap-label">Tap to blow</span>
+          </button>
+          <h1 class="cake-title">Make a wish <span aria-hidden="true">♡</span></h1>
+        </div>
+        <div class="welcome-stage birthday-reveal" id="birthdayReveal" aria-live="polite" hidden>
+          <span class="birthday-kiss" aria-hidden="true">💋</span>
+          <p class="eyebrow">today is all yours</p>
+          <h1 id="welcome-title">Happy Birthday<br>Puttaa! <span aria-hidden="true">♡</span></h1>
+          <p class="welcome-copy">A big kiss for you, Puttaa.</p>
+          <button class="button button-primary enter-button" id="enterButton" type="button">Come in <span aria-hidden="true">♡</span></button>
+        </div>
+    </div>
+    <span class="welcome-flower flower-two" aria-hidden="true">✿</span>
+  </section>
+
+  <main id="siteContent" class="site-content" hidden>
+    <header class="page-header">
+      <a class="wordmark" href="#top" aria-label="Back to the top">a little place <span>♡</span></a>
+      <span class="header-note">made for your birthday</span>
+    </header>
+
+    <div id="top" class="content-wrap">
+      <section class="intro section-block" aria-labelledby="intro-title">
+        <span class="section-flower" aria-hidden="true">✿</span>
+        <p class="eyebrow">a note to you</p>
+        <h2 id="intro-title">A little place<br>about you.</h2>
+        <p class="intro-copy">You probably don't stop to think about all the little things that make you who you are.<br><br>So here's a tiny place where they can all exist for a while.</p>
+        <span class="handwritten">take your time here <span aria-hidden="true">↘</span></span>
+        <figure class="intro-photo">
+          <img src="WhatsApp%20Image%202026-09-29%20at%2012.48.15%20PM.jpeg" alt="A birthday photo for Puttaa" loading="lazy">
+        </figure>
+      </section>
+
+      <section class="section-block" aria-labelledby="very-you-title">
+        <div class="section-heading">
+          <p class="eyebrow">the little details</p>
+          <h2 id="very-you-title">Very you <span>♡</span></h2>
+          <p>Tap a card. These are some of the things that make you, you.</p>
+        </div>
+        <div class="trait-grid" id="traitGrid"></div>
+      </section>
+
+      <section class="section-block notes-section" aria-labelledby="notes-title">
+        <div class="section-heading">
+          <p class="eyebrow">a few things worth keeping</p>
+          <h2 id="notes-title">Things you may not<br>notice about yourself</h2>
+        </div>
+        <div class="note-grid" id="noteGrid"></div>
+      </section>
+
+      <section class="section-block growth-section" aria-labelledby="growth-title">
+        <div class="section-heading">
+          <p class="eyebrow">a little time capsule</p>
+          <h2 id="growth-title">From this to this <span>✦</span></h2>
+          <p>Look how much you've grown.</p>
+        </div>
+        <div class="growth-grid" id="growthGrid"></div>
+      </section>
+
+      <section class="section-block wishes-section" aria-labelledby="wishes-title">
+        <div class="section-heading">
+          <p class="eyebrow">for the next trip around the sun</p>
+          <h2 id="wishes-title">For this new year<br>of your life</h2>
+        </div>
+        <div class="wish-grid" id="wishGrid"></div>
+      </section>
+
+      <section class="section-block surprises-section" aria-labelledby="surprises-title">
+        <div class="section-heading">
+          <p class="eyebrow">choose one, or all three</p>
+          <h2 id="surprises-title">Pick a little surprise</h2>
+        </div>
+        <div class="surprise-grid" id="surpriseGrid"></div>
+        <p class="surprise-message" id="surpriseMessage" aria-live="polite" hidden></p>
+      </section>
+
+      <section class="section-block music-section" aria-labelledby="music-title">
+        <div class="section-heading">
+          <p class="eyebrow">press play whenever you like</p>
+          <h2 id="music-title">A song for you <span>♫</span></h2>
+          <p>Because this song feels like you.</p>
+        </div>
+        <div class="music-player">
+          <div class="record-art" aria-hidden="true"><span>♫</span></div>
+          <div class="track-copy">
+            <span class="track-label">a little soundtrack</span>
+            <strong>Tum Se Hi</strong>
+            <span class="track-caption" id="trackStatus">a song picked just for you</span>
+          </div>
+          <button class="play-button" id="playButton" type="button" aria-label="Play her song" title="Play her song"><span aria-hidden="true">▶</span></button>
+          <audio id="song" preload="none" src="Jab_We_Met_Kogda_my_vstretilis_-_Tum_Se_Hi_(mp3.pm).mp3"></audio>
+        </div>
+      </section>
+
+      <section class="section-block challenge-section" aria-labelledby="challenge-title">
+        <div class="section-heading">
+          <p class="eyebrow">a little list for your year</p>
+          <h2 id="challenge-title">A little challenge<br>for this year</h2>
+          <p>Tick them off whenever the moment feels right.</p>
+        </div>
+        <div class="challenge-list" id="challengeList"></div>
+      </section>
+
+      <section class="final-section" aria-labelledby="final-title">
+        <span class="final-sparkle" aria-hidden="true">✧</span>
+        <p class="eyebrow">before you go</p>
+        <h2 id="final-title">One last thing<br>for you.</h2>
+        <p>I hope you never forget that you are your own person — with your own dreams, your own story and your own kind of magic.</p>
+        <p>Don't let a bad day convince you otherwise.</p>
+        <p class="final-lines">Keep laughing.<br>Keep dreaming.<br>Keep becoming the person you want to be.</p>
+        <p class="world-line">The world is a little more interesting because you're in it. <span>♡</span></p>
+        <button class="button button-primary final-button" id="finalButton" type="button">One last little surprise <span aria-hidden="true">✧</span></button>
+      </section>
+    </div>
+
+    <footer class="page-footer">a tiny corner of the internet <span>♡</span></footer>
+  </main>
+
+  <div class="modal" id="birthdayModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalMessage" hidden>
+    <button class="modal-backdrop" type="button" aria-label="Close birthday message"></button>
+    <div class="modal-card" role="document">
+      <button class="modal-close" id="closeModal" type="button" aria-label="Close">×</button>
+      <span class="modal-flower" aria-hidden="true">✿</span>
+      <p class="eyebrow">today is all yours</p>
+      <h2 id="modalTitle">Happy Birthday,<br>Anuu <span>♡</span></h2>
+      <p id="modalMessage">Keep being wonderfully you.<br>Keep dreaming, keep laughing, keep growing,<br>and remember that you deserve all the beautiful things coming your way.</p>
+      <p class="modal-signoff">Go be amazing.<br>It's your day. <span>♡</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
